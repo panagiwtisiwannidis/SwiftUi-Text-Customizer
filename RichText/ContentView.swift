@@ -2,7 +2,7 @@
 import SwiftUI
 
 @available(macOS 26.0, *)
-struct MainView: View {
+struct ContentView: View {
     @State private var text = AttributedString()
     @State private var selection = AttributedTextSelection()
     @Environment(\.fontResolutionContext) var fontResolutionContext
@@ -143,7 +143,7 @@ struct MainView: View {
 
 #Preview {
     if #available(macOS 26.0, *) {
-        MainView()
+        ContentView()
     } else {
         // Fallback on earlier versions
     }
