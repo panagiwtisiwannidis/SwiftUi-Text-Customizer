@@ -11,7 +11,7 @@ import SwiftUI
 struct RichTextApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
